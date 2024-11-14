@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert on Link Click</title>
+    <style>
+        padf43-48
+        /* task 1 */
+        /* Simple styling for the link */
+        a {
+            font-size: 20px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        /* task2 */
+        img {
+            width: 150px; /* Set a width for the images */
+            margin: 10px; /* Add some margin */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        /* task3 */
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ce9f9f;
+        }
+        button {
+            background-color: rgb(78, 17, 17);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(20, 185, 150);
+        }
+
+        /* task4 */
+        img {
+            width: 300px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            transition: opacity 0.3s; /* Smooth transition */
+        }
+    /* task5 */
+    
+    body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counter {
+            font-size: 2em;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* padf 49 to 52 */
+        /* task 1 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        /* task2 pdf 2 */
+        .item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .full-details {
+            display: none; /* Hide full details by default */
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* task3 pdf2 */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .edit-form {
+            display: none; /* Hide edit form by default */
+            margin-top: 10px;
+        }
+
+
+
+
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Responsive Link */
+a {
+    font-size: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Responsive Images */
+img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Set a max width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some margin */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Responsive Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ce9f9f;
+}
+
+/* Button Styles */
+button {
+    background-color: rgb(78, 17, 17);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(20, 185, 150);
+}
+
+/* Responsive Form */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    width: 90%; /* Make input fields responsive */
+    max-width: 300px; /* Set a max width */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Stack images vertically on smaller screens */
+    img {
+        width: 100%; /* Full width on small screens */
+    }
+
+    /* Adjust table layout */
+    table {
+        display: block; /* Make table block for better responsiveness */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    /* Adjust button sizes */
+    button {
+        width: 100%; /* Full width buttons */
+        margin: 5px 0; /* Add margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    h1, h2 {
+        font-size: 1.5em; /* Smaller headings */
+    }
+
+    /* Adjust input fields */
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <!-- pdf 43to48 -->
+<!-- task1 -->
+    <!-- Link that shows an alert when clicked -->
+    <a href="#" id="alertLink">Click me for an alert</a>
+
+
+    <!-- task 2 -->
+    <h1>Mobile Images</h1>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.0H_GXDBmj8t95s1KzMU5GAHaL5&pid=Api&P=0&h=220" alt="Mobile 1" class="mobile-image">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.kmO5WStrWn7JIw7oyRH2ZQHaHa&pid=Api&P=0&h=220" alt="Mobile 2" class="mobile-image">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.HxCUDuhXiUIYR73NuIvIvQHaEp&pid=Api&P=0&h=220" alt="Mobile 3" class="mobile-image">
+    
+   
+   
+    <!-- task3 -->
+<h2>Student Records</h2>
+ <table id="studentTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Umer</td>
+            <td>20</td>
+            <td>A</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Osama</td>
+            <td>21</td>
+            <td>B</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Mudassir</td>
+            <td>19</td>
+            <td>A</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mujtaba</td>
+            <td>22</td>
+            <td>C</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Almeer</td>
+            <td>20</td>
+            <td>B</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Murtaza</td>
+            <td>23</td>
+            <td>A</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Hamza</td>
+            <td>21</td>
+            <td>B</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Salman</td>
+            <td>22</td>
+            <td>A</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Ali</td>
+            <td>20</td>
+            <td>C</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Mustafa</td>
+            <td>19</td>
+            <td>B</td>
+            <td><button class="delete-button" onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- task 4 -->
+
+<img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkL_Ns6zGNiEwT-aRnMR109YSYYSg9a7Dxg&s" alt="Image" />
+<!-- task5 -->
+<h1>Counter Example</h1>
+<div id="counter">0</div>
+<button id="increaseButton">Increase</button>
+<button id="decreaseButton">Decrease</button>
+
+<!-- pdf 49to52 -->
+<h1>Signup Form</h1>
+    <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <div id="output"></div>
+
+
+    <!-- task2 pdf2 -->
+    <h1>Item List</h1>
+
+    <div class="item">
+        <h2>Item 1</h2>
+        <p>Short description of Item 1...</p>
+        <div class="full-details">
+            <p>Full details of Item 1: This item is great for various purposes. It has many features that make it stand out from the rest.</p>
+        </div>
+        <button class="read-more">Read More</button>
+    </div>
+
+    <div class="item">
+        <h2>Item 2</h2>
+        <p>Short description of Item 2...</p>
+        <div class="full-details">
+            <p>Full details of Item 2: This item is known for its durability and efficiency. It is a must-have for anyone looking for quality.</p>
+        </div>
+        <button class="read-more">Read More</button>
+    </div>
+
+    <div class="item">
+        <h2>Item 3</h2>
+        <p>Short description of Item 3...</p>
+        <div class="full-details">
+            <p>Full details of Item 3: This item offers exceptional performance and is designed to meet the needs of modern users.</p>
+        </div>
+        <button class="read-more">Read More</button>
+    </div>
+
+    <!-- task3 pdf2 -->
+    <h1>Student Details</h1>
+    <form id="studentForm">
+        <input type="text" id="studentName" placeholder="Student Name" required />
+        <input type="number" id="studentAge" placeholder="Student Age" required />
+        <input type="text" id="studentGrade" placeholder="Student Grade" required />
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student rows will be added here -->
+        </tbody>
+    </table>
+
+<script src="app.js"></script>
+
+<body> 
